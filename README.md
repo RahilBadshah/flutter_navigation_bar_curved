@@ -1,16 +1,36 @@
-# flutter_bottom_navigation
+# Flutter_navigation_bar_curved
+Flutter curved bottom navigation bar with great animation by using external package. 
 
-A new Flutter project.
+## Android Screenshots
 
-## Getting Started
+  Gif                 |   Screenshot                   
+:-------------------------:|:-------------------------:
+<img src="https://github.com/RahilBadshah/flutter_navigation_bar_curved/blob/master/screenshots/preview.gif?raw=true" alt="drawing" width="320"  /> | <img src="https://github.com/RahilBadshah/flutter_navigation_bar_curved/blob/master/screenshots/screenshot.jpg?raw=true" alt="drawing" width="320"/>
 
-This project is a starting point for a Flutter application.
+### Add dependency
 
-A few resources to get you started if this is your first Flutter project:
+```yaml
+dependencies:
+  curved_navigation_bar: ^0.2.11 #latest version
+```
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+### How to use
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+```dart
+Scaffold(
+  bottomNavigationBar: CurvedNavigationBar(
+    backgroundColor: Colors.greenAccent,
+    items: <Widget>[
+      Icon(Icons.add_location, size: 30),
+      Icon(Icons.alarm, size: 30),
+      Icon(Icons.dashboard, size: 30),
+      Icon(Icons.supervised_user_circle, size: 30),
+      Icon(Icons.cloud_upload, size: 30),
+    ],
+    onTap: (index) {
+      //Handle button tap
+    },
+  ),
+  body: Container(color: Colors.greenAccent),
+)
+```
