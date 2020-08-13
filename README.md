@@ -1,4 +1,4 @@
-# Flutter_navigation_bar_curved
+# flutter_navigation_bar_curved
 Flutter curved bottom navigation bar with great animation by using external package. 
 
 ## Android Screenshots
